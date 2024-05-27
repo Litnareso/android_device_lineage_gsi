@@ -15,6 +15,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/init/treble-post-fs.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/treble-post-fs.sh \
     $(DEVICE_PATH)/init/treble-prop-handler.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/treble-prop-handler.sh
 
+# Privapp permissions
+PRODUCT_COPY_FILES += \
+	$(DEVICE_PATH)/privapp-permissions-me.phh.treble.app.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-me.phh.treble.app.xml
+
 PRODUCT_PACKAGES += \
     resetprop_sys
 
